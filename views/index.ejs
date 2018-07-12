@@ -1,0 +1,22 @@
+<%- include _header %>
+<h1>Bienvenid@s a la guarida zombie! <img src="/hi_zombie.gif" alt="" id="hi_gif" class="circle"></h1>
+
+<% zombie.forEach((zombie) => {%>
+    <div class="index-area">
+        <ul class="collection">
+            <li class="collection-item avatar">
+                <img src="/user_icon.png" alt="" id="user_icon" class="circle">
+                <span class="title"><a href="/zombie/<%=zombie.username %>">
+                <div class="href_text">
+                    <%= zombie.username %>
+                </div>
+                </a></span>
+                <p><% if(zombie.bio) { %>
+                    <%= zombie.bio %>
+                    <% } %></p>
+            </li>
+        </ul>
+    </div>
+    <% }) %>
+
+<%- include _footer %>

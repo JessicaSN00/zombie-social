@@ -1,0 +1,24 @@
+<%- include _header %>
+    <h1>Actualiza tu perfil</h1>
+
+<div class="register-area">
+    <div class="row">
+        <form action="/edit" method="post">
+            <div class="input-field col s12">
+                <div class="row">
+                    <input type="text" name="displayName" placeholder="Nombre para mostrar" value=" <%= currentZombie.displayName ||""%>"/>
+                <div class="text-area_zombie">
+                    <textarea type="text" name="bio" placeholder="Platicanos algo acerca de ti">
+                        <%= currentZombie.bio ||"" %>
+                    </textarea>
+                </div>
+                <button class="btn waves-effect waves-light light-green accent-3" type="submit" name="action">Actualizar
+                <i class="material-icons right">send</i>
+            </button>
+            </div>  
+            </div>
+        </form>
+    </div>
+</div>
+
+<%- include _footer %>

@@ -1,0 +1,27 @@
+<%- include _header %>
+<h1><img src="/ray-gun.png" alt="" id="zombies_image_icon">Weapon Register</h1>
+<div class="register-area">
+    <div class="row">
+    <form action="/weapons_register" method="post">
+        <div class="input-field col s12">
+            <div class="row">
+                <input type="text" name="name" placeholder="Nombre de arma" required autofocus/>
+            <div>
+                <input type="text" name="description" placeholder="Description" />
+            </div>
+            <div>
+            <input type="text" name="ammo" placeholder="true/false" required/>
+            </div>
+            <div>
+            <input type="number" name="strong" placeholder="Strong" required/>
+            </div>
+            <button class="btn waves-effect waves-light light-green accent-3" type="submit" name="action">Submit
+            <i class="material-icons right">send</i>
+            </button>
+            </div>
+        </div>  
+    </form>
+    </div>
+</div>
+
+<%- include _footer %>

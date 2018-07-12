@@ -1,0 +1,23 @@
+<%- include _header %>
+
+<h1>Log in</h1>
+<div class="register-area">
+    <div class="row">
+        <form action="/login" method="POST">
+            <div class="input-field col s12">
+                <div class="row">
+                    <input type="text" name="username" placeholder="Nombre de Zombie" required autofocus/>
+                <div>
+                    <input type="password" id="password" name="password" placeholder="Contraseña" required/>
+                </div>
+                <button class="btn waves-effect waves-light light-green accent-3" type="submit" name="action">Entrar
+                <i class="material-icons right">send</i>
+                </button>
+            </div>  
+            </div>
+        </form>
+    </div>
+</div>
+</form>
+
+<%- include _footer %>

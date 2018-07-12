@@ -1,0 +1,16 @@
+<%- include _header %>
+
+<div class="profile-area">
+    <% if((currentZombie) && (currentZombie.id === zombie.id)) {%>
+        <a href="/edit">Edita tu perfil</a>
+    <% } %>
+
+    <h1 id="profile-username-color"><%= zombie.username %></h1>
+    <h2>Se registró el <%= zombie.createdAt %></h2>
+
+    <% if(zombie.bio){ %>
+        <p><%= zombie.bio %></p>
+    <% } %>
+</div>
+
+<%- include _footer %>

@@ -1,0 +1,94 @@
+[{
+    "group": "zombie-king",
+    "permissions":[{
+        "resource": "*",
+        "methods": "*",
+        "action": "allow"
+     }]
+},
+
+{
+    "group": "zombie",
+    "permissions":[{
+            "resource": "/",
+            "methods": ["GET"],
+            "action": "allow"
+        },
+        {
+            "resource": "/profile",
+            "methods": ["GET"],
+            "action": "allow"
+        },
+        {
+            "resource": "/edit",
+            "methods": ["GET", "POST"],
+            "action": "allow"
+        },
+        {
+        "resource": "/signup",
+        "methods": ["GET", "POST"],
+        "action": "allow"
+        },
+        {
+            "resource": "/login",
+            "methods": ["GET", "POST"],
+            "action": "allow"
+        },
+        {
+            "resource": "/logout",
+            "methods": ["GET"],
+            "action": "allow"
+        }
+    ]
+},
+
+{
+    "group": "zombie-queen",
+    "permissions":[{
+        "resource": "/edit",
+        "methods": ["GET", "POST"],
+        "action": "allow"
+         },
+        {
+        "resource": "*",
+        "methods": ["GET"],
+        "action": "allow"
+     }
+    ]
+},
+
+{
+    "group": "zombie-boss",
+    "permissions":[{
+        "resource": "/",
+        "methods": ["GET"],
+        "action": "allow"
+    },
+    {
+        "resource": "/weapons_register",
+        "methods": ["GET", "POST"],
+        "action": "allow"
+     },
+    {
+        "resource": "/weapons",
+        "methods": ["GET"],
+        "action": "allow"
+     },
+     {
+        "resource": "/edit",
+        "methods": ["GET", "POST"],
+        "action": "allow"
+     },
+     {
+        "resource": "/signup",
+        "methods": ["GET", "POST"],
+        "action": "allow"
+     },
+     {
+        "resource": "/logout",
+        "methods": ["GET"],
+        "action": "allow"
+     }
+    ]
+}
+]

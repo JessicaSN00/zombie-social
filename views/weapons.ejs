@@ -1,0 +1,27 @@
+<%- include _header %>
+
+<h1>Welcome to Zombie Weapons</h1> 
+
+<div class="weapons_area">
+        <table class="responsive-table">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Description</th>
+                    <th>Ammo</th>
+                    <th>Strong</th>
+                </tr>
+            </thead>
+<% weapons.forEach((weapons) => {%>
+            <tbody>
+                <td><%= weapons.name %></td>
+                <td><%= weapons.description %></td>
+                <td><%= weapons.ammo%></td>
+                <td><%= weapons.strong %></td>
+            </tbody>
+    <% }) %>
+    </table>
+</div>
+
+
+<%- include _footer %>

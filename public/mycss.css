@@ -1,0 +1,99 @@
+body {
+    margin: 0px; 
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    background-image: url(/zombie_background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+footer{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+      
+h1{
+    text-align: center;
+    margin-top: 70px;
+    color: #fff;
+}
+  main {
+    flex: 1 0 auto;
+  }
+.register-area{
+    display: inline-block;
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 5vh;
+    border-radius: 10px;
+}
+
+input{ 
+  color: #fff !important;
+}
+.index-area{
+  display: inline-block;
+  width: 70%;
+  margin-left: 15%;
+  margin-top: 3vh;
+  margin-bottom: 4vh;
+  text-align: justify;
+}
+
+.collection-item, .collection{
+  background-color:rgba(255, 255, 255, 0.4) !important;
+  border-color: rgba(255, 255, 255, 0.4) !important;
+  border-radius: 15px !important;
+
+}
+
+#hi_gif{
+  width: 8%;
+  margin: 0px;
+}
+#signin_icon{
+  margin-right: 5px;
+}
+#zombies_image_icon{
+  width: 60px;
+}
+button{
+  color:#000 !important;
+  margin-left:40%;
+}
+
+.weapons_area{
+  color: #fff !important;
+  width: 60%;
+  margin-left: 20%;
+  text-align: center;
+}
+table{
+  margin-top: 7vh;
+}
+thead{
+  color: #76FF03;
+}
+.href_text, #profile-username-color{
+  color: #76FF03 !important;
+}
+
+.profile-area{
+  color: #fff;
+  width: 60%;
+  margin-left: 20%;
+  text-align: center;
+  margin-top: 7vh;
+}
+
+textarea{
+  background-color:rgba(255, 255, 255, 0.4) !important;
+}
+
+select{
+  background-color: purple !important; 
+  color: #ffffff !important;
+}
